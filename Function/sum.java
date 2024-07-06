@@ -26,7 +26,20 @@ public class sum {
         return d;
     }
 
-    
+    public static int BintoDec(int binnum)
+    {
+        int mynum = binnum;
+        int pow = 0;
+        int decnum = 0;
+        while(binnum > 0)
+        {
+            int lastdigit = binnum % 10 ;
+            decnum = decnum + (lastdigit * (int)Math.pow(2, pow));
+            pow++;
+            binnum = binnum / 10 ; 
+        }
+        return decnum;
+    }    
 
 
     public static void main(String args[]){
@@ -44,7 +57,9 @@ public class sum {
         int ans = bincoeff(a ,x);
         System.out.println("The factorial of "   +ans);*/
 
-        
+        int a = 101;
+        int output = BintoDec(a);
+        System.out.println("the Binary to decimal : " +output);
 
 
     }
