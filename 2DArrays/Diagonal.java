@@ -5,19 +5,26 @@ public class Diagonal
     public static void diagonalmatrix(int a[][])
     {
         int sum =0;
+        // for(int i=0; i<a.length; i++)
+        // {
+        //     for(int j=0; j<a[0].length; j++)
+        //     {
+        //         if( i == j)
+        //         {
+        //             sum += a[i][j];
+        //         }
+        //         if(i+j == a.length-1)
+        //         {
+        //             sum += a[i][j];
+        //         }
+        //     }
+        // }
+
         for(int i=0; i<a.length; i++)
         {
-            for(int j=0; j<a[0].length; j++)
-            {
-                if( i == j)
-                {
-                    sum += a[i][j];
-                }
-                if(i+j == a.length-1)
-                {
-                    sum += a[i][j];
-                }
-            }
+            sum += a[i][i];
+            if(i != a.length-1-i)
+            sum += a[i][a.length-i-1];
         }
         System.out.println("The addition of diagonal matrix is : " +sum);
     }
