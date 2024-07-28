@@ -26,6 +26,6 @@ public class basic {
         System.out.println("the percentage is : " +percentage);
 
         //i want to calculate the length of array
-        System.out.println("length of array : " +marks.length);
+        System.out.println("length of array : " +marks.length); //RamKrishnaHari . JaiKrishnaHari
     }
 }
