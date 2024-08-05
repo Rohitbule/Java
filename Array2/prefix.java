@@ -35,3 +35,48 @@ public class prefix {
         subarraymax(a);
     }
 }
+
+
+/*import java.util.Scanner;
+
+public class MaxSumWithConstraint {
+
+    public static int maxSumWithConstraint(int n, int k, int[] arr) {
+        // Step 1: Initialize the max_prefix array
+        int[] maxPrefix = new int[n];
+        maxPrefix[0] = arr[0];
+
+        // Step 2: Fill the max_prefix array
+        for (int i = 1; i < n; i++) {
+            maxPrefix[i] = Math.max(maxPrefix[i - 1], arr[i]);
+        }
+
+        // Step 3: Find the maximum sum of two elements with the constraint
+        int maxSum = 0;
+        for (int j = k + 1; j < n; j++) {
+            maxSum = Math.max(maxSum, arr[j] + maxPrefix[j - (k + 1)]);
+        }
+
+        return maxSum;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Read n and k
+        int n = scanner.nextInt();
+        int k = scanner.nextInt();
+
+        // Read the array
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = scanner.nextInt();
+        }
+
+        // Calculate and print the result
+        System.out.println(maxSumWithConstraint(n, k, arr));
+
+        scanner.close();
+    }
+}
+*/
