@@ -29,7 +29,7 @@ public class binary {
     public static void main(String args[])
     {
         int number[] = {2,4,6,8,10,12,14};
-        int key = 10;
+        int key = 4;
         int index = binarysearch(number, key);
         if(index == -1)
         {
