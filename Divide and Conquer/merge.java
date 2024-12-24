@@ -1,3 +1,4 @@
+//this is divide conquer approach
 public class merge {
 
     public static void mergesort(int arr[], int si, int ei)
